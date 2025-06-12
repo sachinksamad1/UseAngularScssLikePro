@@ -1,0 +1,74 @@
+// This component's specific styles
+// @use 'src/styles/variables'; // Import variables for use here
+@import '../../styles/variable';
+// @use 'src/styles/mixins';    // Import mixins for use here
+@import '../../styles/mixins';
+
+.blog-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  overflow: hidden;
+  box-shadow: $box-shadow-sm;
+  background-color: $white;
+  margin-bottom: $padding-md; // For spacing when multiple cards are present
+
+  &__image-container {
+    width: 100%;
+    height: 200px; // Fixed height for consistency
+    overflow: hidden;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; // Ensures image covers the area without distortion
+    display: block;
+  }
+
+  &__content {
+    padding: $padding-md;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; // Allows content to take available space
+  }
+
+  &__title {
+    font-size: 1.4em;
+    margin-bottom: $padding-sm;
+    color: $primary-color;
+  }
+
+  &__description {
+    font-size: 0.95em;
+    color: $text-color-dark;
+    line-height: 1.6;
+    flex-grow: 1; // Allows description to push button to bottom
+    margin-bottom: $padding-md; // Add space before button
+  }
+
+  &__meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    color: $secondary-color;
+    margin-bottom: $padding-md;
+  }
+
+  &__author {
+    font-weight: bold;
+  }
+
+  &__date {
+    font-style: italic;
+  }
+
+  &__button {
+    @include button-styles($primary-color); // Use our global button mixin
+    text-align: center;
+    margin-top: auto; // Pushes button to the bottom
+  }
+}

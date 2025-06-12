@@ -1,0 +1,19 @@
+// App-level layout styles, uses global utilities
+@import '../styles/variable';
+
+.app-container {
+  max-width: 1200px;
+  margin: $padding-lg auto; // Using global spacing variable and auto margin
+  padding: $padding-md;
+}
+
+h1 {
+  color: $primary-color;
+}
+
+.blog-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: $padding-md;
+  justify-items: center; // Center cards in the grid cells
+}

@@ -1,0 +1,32 @@
+// Colors
+$primary-color: #007bff;
+$secondary-color: #6c757d;
+$success-color: #28a745;
+$danger-color: #dc3545;
+$info-color: #17a2b8;
+$warning-color: #ffc107;
+
+$text-color-dark: #343a40;
+$text-color-light: #f8f9fa;
+$border-color: #dee2e6;
+$background-light: #f8f9fa;
+$white: #fff;
+$black: #000;
+
+// Fonts
+$font-family-base: 'Arial', sans-serif;
+$font-size-base: 16px;
+$line-height-base: 1.5;
+
+// Spacing
+$spacing-unit: 8px;
+$padding-sm: $spacing-unit;
+$padding-md: $spacing-unit * 2;
+$padding-lg: $spacing-unit * 3;
+
+// Borders
+$border-radius: 4px;
+
+// Shadows
+$box-shadow-sm: 0 0.125rem 0.25rem rgba($black, 0.075);
+$box-shadow-md: 0 0.5rem 1rem rgba($black, 0.15);

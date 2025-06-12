@@ -1,0 +1,22 @@
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-styles($bg-color, $text-color: $white) {
+  display: inline-block;
+  padding: $padding-sm $padding-md;
+  border-radius: $border-radius;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid transparent; // Default
+  background-color: $bg-color;
+  color: $text-color;
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+
+  &:hover {
+    filter: brightness(90%);
+  }
+}
